@@ -1,0 +1,903 @@
+function findImageThenClick(imagepath) 
+  while true do
+    local result = findImage("Screenshots/"..imagepath, 0, 1, nil,nil);
+
+    if #result > 0 then
+      toast(imagepath.." found", 1);
+      for i, v in pairs(result) do
+        tap(v[1], v[2]);
+		--usleep(900000);
+        --touchDown(0, v[1]+15, v[2]);
+		--usleep(99977.17);
+		--touchUp(0, v[1]+15, v[2]);
+		--usleep(1250024.71);
+
+
+      end
+      break;
+    else  
+      toast(imagepath.." not found",1);
+    end
+  end
+end
+
+function findColorThenClick(selectedColors, selectedColors1) 
+  while true do
+    local result = findColors(selectedColors, 0, nil);
+
+    if #result > 0 then
+      toast(" found", 1);
+      for i, v in pairs(result) do
+        usleep(1000000);
+        tap(v[1], v[2]);
+        usleep(1000000);
+        
+		--usleep(900000);
+        --touchDown(0, v[1]+15, v[2]);
+		--usleep(99977.17);
+		--touchUp(0, v[1]+15, v[2]);
+		--usleep(1250024.71);
+
+
+      end
+      break;
+    else  
+      toast(" not found",1);
+    end
+    
+    local result = findColors(selectedColors1, 0, nil);
+
+    if #result > 0 then
+      toast(" found", 1);
+      for i, v in pairs(result) do
+        usleep(1000000);
+        tap(v[1], v[2]);
+        usleep(1000000);
+		--usleep(900000);
+        --touchDown(0, v[1]+15, v[2]);
+		--usleep(99977.17);
+		--touchUp(0, v[1]+15, v[2]);
+		--usleep(1250024.71);
+
+
+      end
+      break;
+    else  
+      toast(" not found",1);
+    end
+  end
+end
+
+function swipeForArena()
+ touchDown(3, 1068.87, 413.89);
+usleep(116551.46);
+touchMove(3, 1044.55, 407.79);
+usleep(16715.25);
+touchMove(3, 1036.43, 406.78);
+usleep(16824.21);
+touchMove(3, 1026.31, 403.73);
+usleep(16598.58);
+touchMove(3, 1013.14, 400.68);
+usleep(16575.04);
+touchMove(3, 1001.99, 398.65);
+usleep(16856.92);
+touchMove(3, 988.82, 395.60);
+usleep(16618.96);
+touchMove(3, 976.67, 393.56);
+usleep(16560.92);
+touchMove(3, 961.46, 390.52);
+usleep(16761.08);
+touchMove(3, 948.29, 387.47);
+usleep(16632.71);
+touchMove(3, 934.11, 384.42);
+usleep(16606.67);
+touchMove(3, 922.97, 382.39);
+usleep(16736.42);
+touchMove(3, 910.81, 379.35);
+usleep(16604.54);
+touchMove(3, 901.70, 378.33);
+usleep(16702.08);
+touchMove(3, 892.58, 376.30);
+usleep(16823.17);
+touchMove(3, 882.44, 374.27);
+usleep(16516.46);
+touchMove(3, 871.29, 372.24);
+usleep(16645.12);
+touchMove(3, 860.15, 371.22);
+usleep(16760.33);
+touchMove(3, 849.00, 370.21);
+usleep(16606.54);
+touchMove(3, 839.88, 369.18);
+usleep(16662.46);
+touchMove(3, 830.77, 368.16);
+usleep(16701.50);
+touchMove(3, 820.64, 368.16);
+usleep(16685.29);
+touchMove(3, 810.50, 368.16);
+usleep(16610.21);
+touchMove(3, 798.35, 368.16);
+usleep(16891.92);
+touchMove(3, 786.20, 368.16);
+usleep(16447.04);
+touchMove(3, 776.06, 368.16);
+usleep(16586.96);
+touchMove(3, 764.91, 368.16);
+usleep(16786.96);
+touchMove(3, 755.80, 368.16);
+usleep(16638.46);
+touchMove(3, 745.67, 368.16);
+usleep(16649.88);
+touchMove(3, 735.53, 369.18);
+usleep(16806.04);
+touchMove(3, 726.42, 370.21);
+usleep(16454.62);
+touchMove(3, 718.32, 371.22);
+usleep(16731.17);
+touchMove(3, 711.21, 371.22);
+usleep(16719.25);
+touchMove(3, 704.12, 371.22);
+usleep(16635.08);
+touchMove(3, 698.06, 371.22);
+usleep(16610.96);
+touchMove(3, 690.95, 371.22);
+usleep(16858.83);
+touchMove(3, 683.86, 371.22);
+usleep(16500.88);
+touchMove(3, 676.77, 371.22);
+usleep(16712.62);
+touchMove(3, 669.68, 371.22);
+usleep(16695.67);
+touchMove(3, 663.60, 371.22);
+usleep(16697.92);
+touchMove(3, 658.54, 371.22);
+usleep(16604.83);
+touchMove(3, 653.47, 371.22);
+usleep(16780.00);
+touchMove(3, 648.41, 371.22);
+usleep(16524.79);
+touchMove(3, 642.33, 371.22);
+usleep(16701.54);
+touchMove(3, 636.24, 371.22);
+usleep(16718.38);
+touchMove(3, 631.18, 371.22);
+usleep(16619.17);
+touchMove(3, 625.10, 372.24);
+usleep(16664.25);
+touchMove(3, 620.04, 372.24);
+usleep(16778.08);
+touchMove(3, 615.98, 372.24);
+usleep(16471.00);
+touchMove(3, 611.92, 372.24);
+usleep(16732.00);
+touchMove(3, 608.89, 373.25);
+usleep(16758.88);
+touchMove(3, 604.83, 373.25);
+usleep(16580.54);
+touchMove(3, 601.80, 373.25);
+usleep(16593.46);
+touchMove(3, 597.75, 374.27);
+usleep(16874.38);
+touchMove(3, 595.72, 374.27);
+usleep(16472.54);
+touchMove(3, 591.66, 375.28);
+usleep(16654.00);
+touchMove(3, 588.63, 375.28);
+usleep(16900.33);
+touchMove(3, 585.59, 376.30);
+usleep(16505.46);
+touchMove(3, 582.54, 376.30);
+usleep(16730.62);
+touchMove(3, 578.50, 377.31);
+usleep(16816.38);
+touchMove(3, 575.45, 378.33);
+usleep(16477.17);
+touchMove(3, 571.40, 379.35);
+usleep(16678.79);
+touchMove(3, 567.36, 379.35);
+usleep(16710.58);
+touchMove(3, 563.30, 380.36);
+usleep(16630.46);
+touchMove(3, 559.25, 381.38);
+usleep(16587.29);
+touchMove(3, 556.21, 381.38);
+usleep(16869.96);
+touchMove(3, 552.16, 382.39);
+usleep(16466.96);
+touchMove(3, 549.12, 382.39);
+usleep(16714.54);
+touchMove(3, 546.07, 382.39);
+usleep(16726.29);
+touchMove(3, 543.04, 382.39);
+usleep(16623.67);
+touchMove(3, 540.01, 383.41);
+usleep(16595.04);
+touchMove(3, 536.95, 383.41);
+usleep(16837.12);
+touchMove(3, 534.93, 383.41);
+usleep(16526.75);
+touchMove(3, 532.90, 383.41);
+usleep(16780.58);
+touchMove(3, 531.89, 383.41);
+usleep(16676.79);
+touchMove(3, 530.89, 383.41);
+usleep(16591.67);
+touchMove(3, 529.87, 383.41);
+usleep(16649.21);
+touchMove(3, 528.86, 383.41);
+usleep(50068.21);
+touchMove(3, 527.84, 383.41);
+usleep(16685.38);
+touchMove(3, 526.83, 383.41);
+usleep(16600.21);
+touchMove(3, 525.81, 383.41);
+usleep(16635.67);
+touchMove(3, 524.80, 383.41);
+usleep(16834.33);
+touchMove(3, 523.78, 383.41);
+usleep(16489.75);
+touchMove(3, 522.78, 383.41);
+usleep(16702.92);
+touchMove(3, 521.75, 383.41);
+usleep(16787.79);
+touchMove(3, 519.74, 383.41);
+usleep(16503.83);
+touchMove(3, 518.72, 384.42);
+usleep(16705.54);
+touchMove(3, 516.69, 384.42);
+usleep(16836.54);
+touchMove(3, 515.69, 384.42);
+usleep(16511.50);
+touchMove(3, 514.66, 384.42);
+usleep(16740.33);
+touchMove(3, 513.66, 384.42);
+usleep(16756.79);
+touchMove(3, 512.64, 385.44);
+usleep(66431.58);
+touchMove(3, 512.64, 387.47);
+usleep(16500.96);
+touchUp(3, 508.60, 391.53);
+  touchUp(3, 508.60, 391.53);
+
+
+
+end
+--usleep(2000000);
+--findImageThenClick('2stararena.bmp');
+--usleep(2000000);
+--findImageThenClick('backbtn.bmp');
+
+usleep(2000000);
+findColorThenClick({{10301961,0,0}, {6035713,4,-33}, {12862474,15,-72}, {9447429,37,-103}, {9123603,55,-103}, {11682315,52,-84}, {16711422,47,-61}, {16491035,18,-28}}, {{11616267,0,0}, {6758146,3,-32}, {12006150,15,-74}, {13861140,34,-100}, {10434311,47,-96}, {11748364,51,-83}, {10429696,43,-83}, {8789763,33,-93}, {10171141,43,-93}, {16776957,45,-60}, {15289601,28,-29}, {14500608,18,-23}});
+--usleep(2000000);
+--findImageThenClick('backbtn.bmp');
+-- have biju karvanu 
+--usleep(1900000);
+--swipeForArena();
+
+
+--usleep(1900000);
+
+--findColorThenClick({{11477806,0,0}, {10888751,-2,3}, {4523531,3,-29}, {13320267,15,-70}, {4460307,45,-93}, {7937053,50,-80}, {9054249,38,-42}, {10823720,26,-25}, {16595531,16,-23}});
+
+
+
+mcoco v1 
+
+function findImageThenClick(imagepath) 
+  while true do
+    local result = findImage("Screenshots/"..imagepath, 1, 1, nil, nil);
+
+    if #result > 0 then
+      toast(imagepath.." found", 1);
+      for i, v in pairs(result) do
+		usleep(900000);
+        touchDown(0, v[1]+15, v[2]);
+		usleep(99977.17);
+		touchUp(0, v[1], v[2]);
+		usleep(1250024.71);
+
+
+      end
+      break;
+    else  
+      toast(imagepath.." not found",1);
+    end
+  end
+end
+
+
+function characterSelection()
+  while true do
+  	local result = findColors({{1381910,0,0}, {1250324,-1,0}, {1118738,-2,0}, {987153,-3,0}, {1776411,-4,0}, {3223343,-5,0}, {3223343,-6,0}, {3223343,-7,0}, {3223343,-8,0}}, 0, nil);
+    if #result > 0 then
+      toast("player selection screen", 1);
+      usleep(1000000);
+      touchDown(1, 384.99, 315.33);
+      usleep(16104.25);
+      touchMove(1, 357.63, 304.16);
+      usleep(16644.12);
+      touchMove(1, 344.46, 300.10);
+      usleep(16860.58);
+      touchMove(1, 331.29, 295.02);
+      usleep(16506.79);
+      touchMove(1, 315.08, 287.90);
+      usleep(16629.71);
+      touchMove(1, 297.85, 279.78);
+      usleep(16805.21);
+      touchMove(1, 281.64, 271.65);
+      usleep(16636.62);
+      touchMove(1, 267.46, 262.50);
+      usleep(16555.54);
+      touchMove(1, 255.31, 254.38);
+      usleep(16858.50);
+      touchMove(1, 244.17, 245.23);
+      usleep(16460.00);
+      touchMove(1, 233.02, 236.08);
+      usleep(16740.42);
+      touchMove(1, 223.90, 226.94);
+      usleep(16744.92);
+      touchMove(1, 214.79, 216.79);
+      usleep(16586.79);
+      touchMove(1, 205.67, 206.62);
+      usleep(16644.29);
+      touchMove(1, 194.52, 194.43);
+      usleep(16861.75);
+      touchMove(1, 186.41, 186.31);
+      usleep(16464.79);
+      touchMove(1, 180.33, 179.19);
+      usleep(16639.54);
+      touchMove(1, 173.24, 173.10);
+      usleep(16926.21);
+      touchMove(1, 169.18, 168.02);
+      usleep(16534.92);
+      touchMove(1, 165.14, 164.97);
+      usleep(16582.96);
+      touchMove(1, 162.09, 161.92);
+      usleep(16863.29);
+      touchMove(1, 158.03, 158.88);
+      usleep(16496.92);
+      touchMove(1, 150.94, 152.77);
+      usleep(16492.75);
+      touchUp(1, 146.91, 148.71);
+      usleep(683495.83);
+
+      touchDown(3, 387.02, 341.75);
+      usleep(66691.00);
+      touchMove(3, 375.87, 343.79);
+      usleep(16873.29);
+      touchMove(3, 364.72, 343.79);
+      usleep(16461.79);
+      touchMove(3, 349.52, 343.79);
+      usleep(16703.42);
+      touchMove(3, 332.31, 343.79);
+      usleep(16744.88);
+      touchMove(3, 311.02, 342.76);
+      usleep(16639.12);
+      touchMove(3, 296.84, 337.69);
+      usleep(16616.83);
+      touchMove(3, 285.70, 333.62);
+      usleep(16808.21);
+      touchMove(3, 273.55, 328.54);
+      usleep(16494.04);
+      touchMove(3, 262.40, 323.47);
+      usleep(16616.58);
+      touchMove(3, 251.26, 318.39);
+      usleep(16831.21);
+      touchMove(3, 240.11, 313.30);
+      usleep(16618.33);
+      touchMove(3, 230.99, 309.24);
+      usleep(16626.17);
+      touchMove(3, 220.85, 304.16);
+      usleep(16756.96);
+      touchMove(3, 211.73, 299.08);
+      usleep(16583.83);
+      touchMove(3, 203.64, 294.00);
+      usleep(16609.75);
+      touchMove(3, 195.53, 288.92);
+      usleep(16849.08);
+      touchMove(3, 189.44, 283.84);
+      usleep(16630.88);
+      touchMove(3, 183.38, 278.76);
+      usleep(16597.67);
+      touchMove(3, 177.29, 274.70);
+      usleep(16866.08);
+      touchMove(3, 172.23, 269.62);
+      usleep(16476.12);
+      touchMove(3, 166.15, 264.54);
+      usleep(16605.58);
+      touchMove(3, 162.09, 260.47);
+      usleep(16829.25);
+      touchMove(3, 157.03, 255.39);
+      usleep(16671.79);
+      touchMove(3, 151.97, 251.33);
+      usleep(16511.25);
+      touchMove(3, 147.91, 248.28);
+      usleep(16929.12);
+      touchMove(3, 143.85, 244.22);
+      usleep(16442.04);
+      touchMove(3, 140.82, 240.16);
+      usleep(16620.21);
+      touchMove(3, 138.79, 238.12);
+      usleep(16832.79);
+      touchMove(3, 137.79, 235.07);
+      usleep(16578.83);
+      touchMove(3, 135.76, 233.04);
+      usleep(16622.33);
+      touchMove(3, 134.74, 229.99);
+      usleep(16898.00);
+      touchMove(3, 133.73, 226.94);
+      usleep(16463.38);
+      touchMove(3, 132.71, 223.90);
+      usleep(16617.25);
+      touchMove(3, 132.71, 221.87);
+      usleep(16839.92);
+      touchMove(3, 132.71, 220.85);
+      usleep(16610.25);
+      touchMove(3, 131.70, 218.82);
+      usleep(16578.71);
+      touchMove(3, 131.70, 214.76);
+      usleep(16673.29);
+      touchUp(3, 127.65, 210.68);
+      usleep(683570.46);
+
+      touchDown(6, 399.17, 308.22);
+      usleep(50127.04);
+      touchMove(6, 390.05, 319.40);
+      usleep(16406.33);
+      touchMove(6, 378.90, 320.42);
+      usleep(16674.83);
+      touchMove(6, 364.72, 322.45);
+      usleep(16943.46);
+      touchMove(6, 348.52, 324.48);
+      usleep(16518.50);
+      touchMove(6, 330.28, 326.51);
+      usleep(16606.12);
+      touchMove(6, 312.05, 327.53);
+      usleep(16833.92);
+      touchMove(6, 293.81, 327.53);
+      usleep(16406.42);
+      touchMove(6, 276.58, 327.53);
+      usleep(16842.46);
+      touchMove(6, 260.37, 327.53);
+      usleep(16734.71);
+      touchMove(6, 245.17, 327.53);
+      usleep(16573.54);
+      touchMove(6, 229.97, 327.53);
+      usleep(16536.42);
+      touchMove(6, 217.82, 327.53);
+      usleep(16991.04);
+      touchMove(6, 204.65, 327.53);
+      usleep(16332.08);
+      touchMove(6, 194.52, 326.51);
+      usleep(16672.46);
+      touchMove(6, 184.38, 325.50);
+      usleep(16807.33);
+      touchMove(6, 172.23, 323.47);
+      usleep(16503.04);
+      touchMove(6, 161.08, 320.42);
+      usleep(16691.12);
+      touchMove(6, 151.97, 317.37);
+      usleep(17014.12);
+      touchMove(6, 144.88, 315.33);
+      usleep(16524.17);
+      touchMove(6, 139.80, 313.30);
+      usleep(16549.00);
+      touchMove(6, 137.79, 312.29);
+      usleep(16756.08);
+      touchMove(6, 136.77, 311.27);
+      usleep(16479.42);
+      touchMove(6, 136.77, 310.25);
+      usleep(66841.92);
+      touchMove(6, 133.73, 309.24);
+      usleep(16655.54);
+      touchUp(6, 120.56, 298.07);
+      usleep(1000);      
+  toast("players selected",1);
+      break;
+    else 
+      toast("player selection not found",1);
+    end
+  end
+end
+  
+findImageThenClick('s1.bmp');
+usleep(100000);
+findImageThenClick('playversus.bmp');
+usleep(100000);
+findImageThenClick('2stararena.bmp');
+usleep(100000);
+--character selection 
+characterSelection();
+usleep(100000);
+findImageThenClick('findmatch.bmp');
+usleep(100000);
+findImageThenClick('continue.bmp');
+usleep(100000);
+findImageThenClick('accept.bmp');
+usleep(100000);
+findImageThenClick('continue.bmp');
+usleep(100000);
+findImageThenClick('nextfight.bmp');
+usleep(100000);
+findImageThenClick('finalfight.bmp');
+usleep(100000);
+
+
+ fight loop
+ 
+ function findImageThenClick(imagepath) 
+  while true do
+    local result = findImage("Screenshots/"..imagepath, 1, 1, nil, nil);
+
+    if #result > 0 then
+      toast(imagepath.."image found", 1);
+      for i, v in pairs(result) do
+		usleep(900000);
+        touchDown(0, v[1]+15, v[2]);
+		usleep(99977.17);
+		touchUp(0, v[1]+15, v[2]);
+		usleep(1250024.71);
+
+
+      end
+      break;
+    else 
+      toast(imagepath.."image not found",1);
+    end
+  end
+end
+
+function findImageThenClickOnce(imagepath)
+    local result = findImage("Screenshots/"..imagepath, 1, 1, nil, nil);
+
+      if #result > 0 then
+        toast(imagepath.."image found", 1);
+        for i, v in pairs(result) do
+          usleep(900000);
+          touchDown(0, v[1]+15, v[2]);
+          usleep(99977.17);
+          touchUp(0, v[1]+15, v[2]);
+          usleep(1250024.71);
+      	
+        end
+    	return true;
+      else 
+        toast(imagepath.."image not found",1);
+    	return false;
+    end
+end
+
+function characterSelection()
+  while true do
+  	local result = findColors({{1381910,0,0}, {1250324,-1,0}, {1118738,-2,0}, {987153,-3,0}, {1776411,-4,0}, {3223343,-5,0}, {3223343,-6,0}, {3223343,-7,0}, {3223343,-8,0}}, 0, nil);
+    if #result > 0 then
+      toast("player selection screen", 1);
+      usleep(1000000);
+      touchDown(1, 384.99, 315.33);
+      usleep(16104.25);
+      touchMove(1, 357.63, 304.16);
+      usleep(16644.12);
+      touchMove(1, 344.46, 300.10);
+      usleep(16860.58);
+      touchMove(1, 331.29, 295.02);
+      usleep(16506.79);
+      touchMove(1, 315.08, 287.90);
+      usleep(16629.71);
+      touchMove(1, 297.85, 279.78);
+      usleep(16805.21);
+      touchMove(1, 281.64, 271.65);
+      usleep(16636.62);
+      touchMove(1, 267.46, 262.50);
+      usleep(16555.54);
+      touchMove(1, 255.31, 254.38);
+      usleep(16858.50);
+      touchMove(1, 244.17, 245.23);
+      usleep(16460.00);
+      touchMove(1, 233.02, 236.08);
+      usleep(16740.42);
+      touchMove(1, 223.90, 226.94);
+      usleep(16744.92);
+      touchMove(1, 214.79, 216.79);
+      usleep(16586.79);
+      touchMove(1, 205.67, 206.62);
+      usleep(16644.29);
+      touchMove(1, 194.52, 194.43);
+      usleep(16861.75);
+      touchMove(1, 186.41, 186.31);
+      usleep(16464.79);
+      touchMove(1, 180.33, 179.19);
+      usleep(16639.54);
+      touchMove(1, 173.24, 173.10);
+      usleep(16926.21);
+      touchMove(1, 169.18, 168.02);
+      usleep(16534.92);
+      touchMove(1, 165.14, 164.97);
+      usleep(16582.96);
+      touchMove(1, 162.09, 161.92);
+      usleep(16863.29);
+      touchMove(1, 158.03, 158.88);
+      usleep(16496.92);
+      touchMove(1, 150.94, 152.77);
+      usleep(16492.75);
+      touchUp(1, 146.91, 148.71);
+      usleep(683495.83);
+
+      touchDown(3, 387.02, 341.75);
+      usleep(66691.00);
+      touchMove(3, 375.87, 343.79);
+      usleep(16873.29);
+      touchMove(3, 364.72, 343.79);
+      usleep(16461.79);
+      touchMove(3, 349.52, 343.79);
+      usleep(16703.42);
+      touchMove(3, 332.31, 343.79);
+      usleep(16744.88);
+      touchMove(3, 311.02, 342.76);
+      usleep(16639.12);
+      touchMove(3, 296.84, 337.69);
+      usleep(16616.83);
+      touchMove(3, 285.70, 333.62);
+      usleep(16808.21);
+      touchMove(3, 273.55, 328.54);
+      usleep(16494.04);
+      touchMove(3, 262.40, 323.47);
+      usleep(16616.58);
+      touchMove(3, 251.26, 318.39);
+      usleep(16831.21);
+      touchMove(3, 240.11, 313.30);
+      usleep(16618.33);
+      touchMove(3, 230.99, 309.24);
+      usleep(16626.17);
+      touchMove(3, 220.85, 304.16);
+      usleep(16756.96);
+      touchMove(3, 211.73, 299.08);
+      usleep(16583.83);
+      touchMove(3, 203.64, 294.00);
+      usleep(16609.75);
+      touchMove(3, 195.53, 288.92);
+      usleep(16849.08);
+      touchMove(3, 189.44, 283.84);
+      usleep(16630.88);
+      touchMove(3, 183.38, 278.76);
+      usleep(16597.67);
+      touchMove(3, 177.29, 274.70);
+      usleep(16866.08);
+      touchMove(3, 172.23, 269.62);
+      usleep(16476.12);
+      touchMove(3, 166.15, 264.54);
+      usleep(16605.58);
+      touchMove(3, 162.09, 260.47);
+      usleep(16829.25);
+      touchMove(3, 157.03, 255.39);
+      usleep(16671.79);
+      touchMove(3, 151.97, 251.33);
+      usleep(16511.25);
+      touchMove(3, 147.91, 248.28);
+      usleep(16929.12);
+      touchMove(3, 143.85, 244.22);
+      usleep(16442.04);
+      touchMove(3, 140.82, 240.16);
+      usleep(16620.21);
+      touchMove(3, 138.79, 238.12);
+      usleep(16832.79);
+      touchMove(3, 137.79, 235.07);
+      usleep(16578.83);
+      touchMove(3, 135.76, 233.04);
+      usleep(16622.33);
+      touchMove(3, 134.74, 229.99);
+      usleep(16898.00);
+      touchMove(3, 133.73, 226.94);
+      usleep(16463.38);
+      touchMove(3, 132.71, 223.90);
+      usleep(16617.25);
+      touchMove(3, 132.71, 221.87);
+      usleep(16839.92);
+      touchMove(3, 132.71, 220.85);
+      usleep(16610.25);
+      touchMove(3, 131.70, 218.82);
+      usleep(16578.71);
+      touchMove(3, 131.70, 214.76);
+      usleep(16673.29);
+      touchUp(3, 127.65, 210.68);
+      usleep(683570.46);
+
+      touchDown(6, 399.17, 308.22);
+      usleep(50127.04);
+      touchMove(6, 390.05, 319.40);
+      usleep(16406.33);
+      touchMove(6, 378.90, 320.42);
+      usleep(16674.83);
+      touchMove(6, 364.72, 322.45);
+      usleep(16943.46);
+      touchMove(6, 348.52, 324.48);
+      usleep(16518.50);
+      touchMove(6, 330.28, 326.51);
+      usleep(16606.12);
+      touchMove(6, 312.05, 327.53);
+      usleep(16833.92);
+      touchMove(6, 293.81, 327.53);
+      usleep(16406.42);
+      touchMove(6, 276.58, 327.53);
+      usleep(16842.46);
+      touchMove(6, 260.37, 327.53);
+      usleep(16734.71);
+      touchMove(6, 245.17, 327.53);
+      usleep(16573.54);
+      touchMove(6, 229.97, 327.53);
+      usleep(16536.42);
+      touchMove(6, 217.82, 327.53);
+      usleep(16991.04);
+      touchMove(6, 204.65, 327.53);
+      usleep(16332.08);
+      touchMove(6, 194.52, 326.51);
+      usleep(16672.46);
+      touchMove(6, 184.38, 325.50);
+      usleep(16807.33);
+      touchMove(6, 172.23, 323.47);
+      usleep(16503.04);
+      touchMove(6, 161.08, 320.42);
+      usleep(16691.12);
+      touchMove(6, 151.97, 317.37);
+      usleep(17014.12);
+      touchMove(6, 144.88, 315.33);
+      usleep(16524.17);
+      touchMove(6, 139.80, 313.30);
+      usleep(16549.00);
+      touchMove(6, 137.79, 312.29);
+      usleep(16756.08);
+      touchMove(6, 136.77, 311.27);
+      usleep(16479.42);
+      touchMove(6, 136.77, 310.25);
+      usleep(66841.92);
+      touchMove(6, 133.73, 309.24);
+      usleep(16655.54);
+      touchUp(6, 120.56, 298.07);
+      usleep(1000);      
+  toast("players selected",1);
+      break;
+    else 
+      toast("player selection not found",1);
+    end
+  end
+end
+
+function fightAlgorithm() 
+  touchDown(3, 225.93, 394.58);
+  usleep(33519.58);
+  touchMove(3, 201.61, 387.47);
+  usleep(16692.58);
+  touchMove(3, 174.26, 387.47);
+  usleep(16909.75);
+  touchMove(3, 136.77, 381.38);
+  usleep(16325.04);
+  touchMove(3, 103.33, 374.27);
+  usleep(16833.21);
+  touchMove(3, 60.77, 364.10);
+  usleep(16637.29);
+  touchMove(3, 33.42, 354.96);
+  usleep(16377.83);
+  touchUp(3, 29.38, 350.90);
+  usleep(300068.33);
+
+  touchDown(3, 47.62, 376.30);
+  usleep(16816.54);
+  touchMove(3, 72.94, 385.44);
+  usleep(16721.42);
+  touchMove(3, 96.24, 387.47);
+  usleep(52109.83);
+  touchMove(3, 219.85, 408.81);
+  usleep(14587.12);
+  touchMove(3, 320.14, 437.26);
+  usleep(16484.83);
+  touchUp(3, 324.20, 441.32);
+  usleep(400221.33);
+
+  touchDown(7, 992.87, 417.95);
+  usleep(149837.25);
+  touchUp(7, 992.87, 417.95);
+  usleep(119017.21);
+
+  touchDown(7, 983.76, 418.96);
+  usleep(114396.42);
+  touchUp(7, 983.76, 418.96);
+  usleep(66614.96);
+
+  touchDown(7, 980.72, 422.01);
+  usleep(100135.00);
+  touchUp(7, 980.72, 422.01);
+  usleep(83377.46);
+
+  touchDown(7, 983.76, 427.10);
+  usleep(100078.21);
+  touchUp(7, 983.76, 427.10);
+  usleep(66507.92);
+
+  touchDown(7, 986.79, 430.15);
+  usleep(99909.17);
+  touchUp(7, 986.79, 430.15);
+  usleep(66925.62);
+
+  touchDown(7, 986.79, 430.15);
+  usleep(100019.71);
+  touchUp(7, 986.79, 430.15);
+  usleep(83175.04);
+
+  touchDown(7, 990.85, 431.16);
+  usleep(99927.04);
+  touchUp(7, 990.85, 431.16);
+  usleep(50256.79);
+
+  touchDown(7, 986.79, 434.21);
+  usleep(99772.33);
+  touchUp(7, 986.79, 434.21);
+  usleep(266864.29);
+
+  touchDown(4, 193.50, 410.84);
+  usleep(199994.71);
+  touchMove(4, 201.61, 419.98);
+  usleep(16574.42);
+  touchMove(4, 181.35, 419.98);
+  usleep(16774.79);
+  touchMove(4, 133.73, 415.92);
+  usleep(16790.88);
+  touchMove(4, 67.88, 406.78);
+  usleep(16380.08);
+  touchMove(4, 24.30, 399.67);
+  usleep(16672.79);
+  touchUp(4, 20.25, 395.60);
+  usleep(299972.46);
+
+end
+
+while true do
+characterSelection();
+usleep(100000);
+while true do
+    if(findImageThenClickOnce('findmatch.bmp')) then
+      break;
+    elseif(findImageThenClickOnce('findmatch1.bmp')) then
+        break;
+    else
+        toast('find match nai madtu',1);
+    end
+end
+      
+usleep(100000);
+findImageThenClick('continue.bmp');
+usleep(100000);
+findImageThenClick('accept.bmp');
+usleep(100000);
+findImageThenClick('continue.bmp');
+
+while true do
+  while true do 
+    --fight algorithm started
+    fightAlgorithm();
+    --check if the match is finished yet 
+    --by looking for the view match button
+    local result = findImage("Screenshots/viewmatch.bmp", 0, 1, nil, nil);
+    if #result > 0 then
+      break;
+    end
+  end
+  -- check which button it is next fight or final fight
+  while true do 
+    if(findImageThenClickOnce('nextfight.bmp')) then
+      break;
+    elseif(findImageThenClickOnce('finalfight.bmp')) then
+      	
+        break;
+      elseif(findImageThenClickOnce('continue.bmp')) then
+      	
+      	goto fight;
+    end
+  end
+end
+::fight::
+
+--press next series 
+usleep(100000);
+findImageThenClick('nextseries.bmp');
+ 
+end
+

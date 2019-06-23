@@ -1,0 +1,21 @@
+th, tr, td {
+    border: 1px solid black;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th {
+    text-align: center;
+}
+
+#table_container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+}
+
+#table_itself {
+    margin: 0 auto;
+    
+}
